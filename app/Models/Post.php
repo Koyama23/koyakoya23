@@ -10,6 +10,11 @@ class Post extends Model
     use HasFactory;
 
 
+protected $fillable = [
+    'title',
+    'body',
+];
+
 
 public function getByLimit(int $limit_count = 10)
 {
